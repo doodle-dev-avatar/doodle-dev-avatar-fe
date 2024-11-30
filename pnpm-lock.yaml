@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@netlify/plugin-nextjs':
-        specifier: ^5.8.1
-        version: 5.8.1
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
@@ -30,6 +27,9 @@ importers:
         specifier: ^18
         version: 18.3.1(react@18.3.1)
     devDependencies:
+      '@netlify/plugin-nextjs':
+        specifier: ^5.8.1
+        version: 5.8.1
       '@types/node':
         specifier: ^20
         version: 20.17.6
