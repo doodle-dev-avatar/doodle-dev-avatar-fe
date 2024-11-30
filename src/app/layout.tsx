@@ -1,3 +1,4 @@
+import Frame from '@/components/Layout';
 import type { Metadata } from 'next';
 import '../style/globals.css';
 
@@ -13,7 +14,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Frame>{children}</Frame>
+      </body>
     </html>
   );
 }
