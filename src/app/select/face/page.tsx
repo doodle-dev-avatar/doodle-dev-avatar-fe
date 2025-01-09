@@ -1,3 +1,11 @@
+import SlotMachine from '@/components/widgets/SlotMachine';
+
 export default function SelectFacePage() {
-  return <>select face</>;
+  const items = ['🍎', '🍌', '🍒', '🍌', '🍒', '🍒'];
+
+  return (
+    <>
+      <SlotMachine items={items} />
+    </>
+  );
 }
