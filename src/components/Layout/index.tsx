@@ -13,7 +13,7 @@ function Frame({ children }: FrameProps) {
       flexCol={true}
       align="start"
       justify="start"
-      className="w-screen h-screen relative bg-neutral-200"
+      className="w-screen h-screen relative bg-neutral-100"
     >
       <div className="max-w-lg ml-auto mr-auto bg-white w-full h-full relative">
         {children}
