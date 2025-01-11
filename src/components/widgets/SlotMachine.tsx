@@ -1,40 +1,35 @@
 'use client';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
+import Flex from '../Flex';
 
 interface SlotMachineProps {
   items: string[];
 }
 
 const SlotMachine: React.FC<SlotMachineProps> = ({ items }) => {
-  const [isSpinning, setIsSpinning] = useState(false);
+  const [isSpinning, setIsSpinning] = useState(true);
   const [result, setResult] = useState<string | null>(null);
   const [activeIndex, setActiveIndex] = useState(0);
-  const [interval, setIntervalState] = useState<NodeJS.Timeout | undefined>(
-    undefined,
-  );
+  const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
     if (isSpinning) {
-      const newInterval = setInterval(() => {
+      intervalRef.current = setInterval(() => {
         setActiveIndex((prevIndex) => (prevIndex + 1) % items.length);
       }, 100);
-      setIntervalState(newInterval);
     } else {
-      if (interval !== undefined) {
-        clearInterval(interval);
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+        intervalRef.current = null;
       }
     }
     return () => {
-      if (interval !== undefined) {
-        clearInterval(interval);
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+        intervalRef.current = null;
       }
     };
-  }, [isSpinning, items.length]);
-
-  const handleStart = () => {
-    setIsSpinning(true);
-    setResult(null);
-  };
+  }, [isSpinning]);
 
   const handleStop = () => {
     setIsSpinning(false);
@@ -50,33 +45,33 @@ const SlotMachine: React.FC<SlotMachineProps> = ({ items }) => {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-gray-900 text-white">
-      <div className="flex flex-col gap-4 mb-6">
+    <Flex
+      className="h-screen text-white"
+      flexCol
+      align="center"
+      justify="center"
+    >
+      <Flex className="gap-4 mb-6" flexCol>
         {rows.map((row, rowIndex) => (
-          <div key={rowIndex} className="flex justify-center gap-4">
+          <Flex key={rowIndex} className="gap-4" justify="center">
             {row.map((item, index) => (
-              <div
+              <Flex
+                align="center"
+                justify="center"
                 key={index}
-                className={`w-20 h-20 flex items-center justify-center text-3xl font-bold border-4 rounded ${
+                className={`w-20 h-20 flex text-3xl font-bold border-4 rounded ${
                   index + rowIndex * Math.ceil(items.length / 2) === activeIndex
                     ? 'border-red-500'
                     : 'border-gray-700'
                 }`}
               >
                 {item}
-              </div>
+              </Flex>
             ))}
-          </div>
+          </Flex>
         ))}
-      </div>
-      <div className="flex space-x-4">
-        <button
-          onClick={handleStart}
-          disabled={isSpinning}
-          className="px-6 py-2 bg-green-500 text-white font-bold rounded hover:bg-green-600 disabled:bg-gray-600"
-        >
-          Start
-        </button>
+      </Flex>
+      <Flex className="space-x-4">
         <button
           onClick={handleStop}
           disabled={!isSpinning}
@@ -84,13 +79,8 @@ const SlotMachine: React.FC<SlotMachineProps> = ({ items }) => {
         >
           Stop
         </button>
-      </div>
-      {result && (
-        <div className="text-2xl font-bold">
-          Result: <span className="text-yellow-500">{result}</span>
-        </div>
-      )}
-    </div>
+      </Flex>
+    </Flex>
   );
 };
 
