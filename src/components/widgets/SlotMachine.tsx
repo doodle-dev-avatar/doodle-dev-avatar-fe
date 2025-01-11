@@ -1,6 +1,7 @@
 'use client';
 import React, { useState, useEffect, useRef } from 'react';
 import Flex from '../Flex';
+import Button from '../common/Button';
 
 interface SlotMachineProps {
   items: string[];
@@ -72,13 +73,13 @@ const SlotMachine: React.FC<SlotMachineProps> = ({ items }) => {
         ))}
       </Flex>
       <Flex className="space-x-4">
-        <button
-          onClick={handleStop}
+        <Button
+          handleClick={handleStop}
           disabled={!isSpinning}
           className="px-6 py-2 bg-red-500 text-white font-bold rounded hover:bg-red-600 disabled:bg-gray-600"
         >
           Stop
-        </button>
+        </Button>
       </Flex>
     </Flex>
   );
