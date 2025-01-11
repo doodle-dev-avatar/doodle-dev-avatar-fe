@@ -1,18 +1,11 @@
 interface ButtonProps {
   children?: React.ReactNode;
-  text?: string;
   type?: 'dark' | 'light';
   className?: string;
   handleClick?: () => void;
 }
 
-const Button = ({
-  children,
-  text,
-  type,
-  className,
-  handleClick,
-}: ButtonProps) => {
+const Button = ({ children, type, className, handleClick }: ButtonProps) => {
   return (
     <button
       onClick={handleClick}
@@ -23,7 +16,6 @@ const Button = ({
         ${className}
         `}
     >
-      {text}
       {children}
     </button>
   );
