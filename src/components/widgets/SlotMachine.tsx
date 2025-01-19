@@ -4,12 +4,12 @@ import Flex from '../Flex';
 import Button from '../common/Button';
 
 interface SlotMachineProps {
-  items: string[];
+  items: JSX.Element[];
 }
 
 const SlotMachine: React.FC<SlotMachineProps> = ({ items }) => {
   const [isSpinning, setIsSpinning] = useState(true);
-  const [result, setResult] = useState<string | null>(null);
+  const [result, setResult] = useState<JSX.Element | null>(null);
   const [activeIndex, setActiveIndex] = useState(0);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
