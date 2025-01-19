@@ -1,4 +1,6 @@
-export const faceType = {
+import { FaceType } from '@/types/selectType';
+
+export const faceIconType = {
   circle: (
     <svg
       width="160"
@@ -63,4 +65,4 @@ export const faceType = {
       />
     </svg>
   ),
-};
+} as Record<FaceType[number], JSX.Element>;

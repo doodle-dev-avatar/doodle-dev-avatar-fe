@@ -1,4 +1,6 @@
-export const expressionType = {
+import { ExpressionType } from '@/types/selectType';
+
+export const expressionIconType = {
   smile: (
     <svg
       width="70"
@@ -256,4 +258,4 @@ export const expressionType = {
       />
     </svg>
   ),
-};
+} as Record<ExpressionType[number], JSX.Element>;
