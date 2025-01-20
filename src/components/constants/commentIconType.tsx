@@ -1,6 +1,6 @@
 import { CommentType } from '@/types/selectType';
 
-export const commentType = {
+export const commentIconType = {
   lgtm: (
     <div className="flex">
       LGTM
