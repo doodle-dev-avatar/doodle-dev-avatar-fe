@@ -2,7 +2,7 @@ import { CommentType } from '@/types/selectType';
 
 export const commentIconType = {
   lgtm: (
-    <div className="flex">
+    <div className="flex text-black">
       LGTM
       <svg
         width="35"
@@ -738,14 +738,15 @@ export const commentIconType = {
       </svg>
     </div>
   ),
-  merge: <>머지했어요</>,
-  pr: <>PR 올렸어요</>,
+  merge: <div className="text-black">머지했어요</div>,
+  pr: <div className="text-black">PR 올렸어요</div>,
   review: (
-    <>
+    <div className="text-black">
       코드리뷰
       <br />
       해주세요
-    </>
+    </div>
   ),
-  why: <>왜 되지?</>,
+  why: <div className="text-black">왜 되지?</div>,
+  none: <div className="text-black">...</div>,
 } as Record<CommentType[number], JSX.Element>;

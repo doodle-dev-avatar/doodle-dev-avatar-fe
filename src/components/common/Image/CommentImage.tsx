@@ -1,12 +1,12 @@
-import { goodsIconType } from '@/components/constants';
-import { GoodsType } from '@/types/selectType';
+import { commentIconType } from '@/components/constants';
+import { CommentType } from '@/types/selectType';
 
 type props = {
-  type: GoodsType[number];
+  type: CommentType[number];
 };
 
 const CommentImage = ({ type }: props) => {
-  const IconSVG = goodsIconType[type];
+  const IconSVG = commentIconType[type];
   if (!IconSVG) return null;
   return <>{IconSVG}</>;
 };
