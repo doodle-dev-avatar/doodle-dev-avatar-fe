@@ -1,17 +1,30 @@
 'use client';
+
 import React, { useState, useEffect, useRef } from 'react';
+import { useRouter } from 'next/navigation';
 import Flex from '../Flex';
 import Button from '../common/Button';
+import { useSelectStore } from '@/store/useSelectStore';
 
 interface SlotMachineProps {
   items: JSX.Element[];
+  selectType:
+    | 'background'
+    | 'expression'
+    | 'face'
+    | 'comment'
+    | 'goods'
+    | 'props';
 }
 
-const SlotMachine: React.FC<SlotMachineProps> = ({ items }) => {
+const SlotMachine: React.FC<SlotMachineProps> = ({ items, selectType }) => {
+  const { setSelectByType } = useSelectStore();
   const [isSpinning, setIsSpinning] = useState(true);
+  const [isNext, setIsNext] = useState(false);
   const [result, setResult] = useState<JSX.Element | null>(null);
   const [activeIndex, setActiveIndex] = useState(0);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
+  const router = useRouter();
 
   useEffect(() => {
     if (isSpinning) {
@@ -34,7 +47,26 @@ const SlotMachine: React.FC<SlotMachineProps> = ({ items }) => {
 
   const handleStop = () => {
     setIsSpinning(false);
-    setResult(items[activeIndex]);
+    const selectedItem = items[activeIndex];
+    setResult(selectedItem);
+    setSelectByType(selectType, items[activeIndex].key || '');
+    setIsNext(true);
+  };
+
+  const handleNext = () => {
+    const routes: Record<string, string> = {
+      face: '/select/expression',
+      expression: '/select/props',
+      props: '/select/goods',
+      goods: '/select/comment',
+      comment: '/select/background',
+    };
+
+    if (selectType === 'background') {
+      setIsNext(false);
+    } else {
+      router.push(routes[selectType]);
+    }
   };
 
   const rows = [];
@@ -73,13 +105,29 @@ const SlotMachine: React.FC<SlotMachineProps> = ({ items }) => {
         ))}
       </Flex>
       <Flex className="space-x-4">
-        <Button
-          handleClick={handleStop}
-          disabled={!isSpinning}
-          className="px-6 py-2 bg-red-500 text-white font-bold rounded hover:bg-red-600 disabled:bg-gray-600"
-        >
-          Stop
-        </Button>
+        {!isNext ? (
+          <Button
+            handleClick={handleStop}
+            disabled={!isSpinning}
+            className="px-6 py-2 bg-red-500 text-white font-bold rounded hover:bg-red-600 disabled:bg-gray-600"
+          >
+            Stop
+          </Button>
+        ) : selectType === 'background' ? (
+          <Button
+            handleClick={() => router.push('/result')}
+            className="px-6 py-2 bg-green-500 text-white font-bold rounded hover:bg-green-600"
+          >
+            결과 보러가기
+          </Button>
+        ) : (
+          <Button
+            handleClick={handleNext}
+            className="px-6 py-2 bg-blue-500 text-white font-bold rounded hover:bg-blue-600"
+          >
+            Next!
+          </Button>
+        )}
       </Flex>
     </Flex>
   );

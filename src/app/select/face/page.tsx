@@ -11,7 +11,7 @@ export default function SelectFacePage() {
 
   return (
     <>
-      <SlotMachine items={items} />
+      <SlotMachine items={items} selectType="face" />
     </>
   );
 }

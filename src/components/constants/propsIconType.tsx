@@ -1,4 +1,6 @@
-export const propsType = {
+import { PropsType } from '@/types/selectType';
+
+export const propsIconType = {
   headphone: (
     <svg
       width="184"
@@ -127,4 +129,4 @@ export const propsType = {
       />
     </svg>
   ),
-};
+} as Record<PropsType[number], JSX.Element>;

@@ -22,6 +22,10 @@ export interface SelectStore {
   setGoods: (goods: GoodsType[number]) => void;
   setComment: (comment: CommentType[number]) => void;
   setBackground: (background: BackgroundType[number]) => void;
+  setSelectByType: (
+    type: 'background' | 'expression' | 'face' | 'comment' | 'goods' | 'props',
+    value: string,
+  ) => void;
 }
 
 export const useSelectStore = create(
@@ -39,6 +43,20 @@ export const useSelectStore = create(
       setGoods: (goods) => set({ goods }),
       setComment: (comment) => set({ comment }),
       setBackground: (background) => set({ background }),
+      setSelectByType: (
+        type:
+          | 'background'
+          | 'expression'
+          | 'face'
+          | 'comment'
+          | 'goods'
+          | 'props',
+        value: string,
+      ) =>
+        set((state) => ({
+          ...state,
+          [type]: value,
+        })),
     }),
     {
       name: 'selectStorage',
