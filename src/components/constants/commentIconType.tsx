@@ -80,7 +80,7 @@ export const commentIconType = {
         <path
           d="M26.2204 28.1081C28.0217 28.1081 29.4819 26.6478 29.4819 24.8465C29.4819 23.0452 28.0217 21.585 26.2204 21.585H21.6321C19.8308 21.585 18.3705 23.0452 18.3705 24.8465C18.3705 26.6478 19.8308 28.1081 21.6321 28.1081H26.2204Z"
           fill="#C4C4C4"
-          fill-opacity="0.66"
+          fillOpacity="0.66"
         />
         <g filter="url(#filter5_i_36_252)">
           <path
@@ -154,9 +154,9 @@ export const commentIconType = {
             width="20.5358"
             height="30.48"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feBlend
               mode="normal"
               in="SourceGraphic"
@@ -189,9 +189,9 @@ export const commentIconType = {
             width="11.7448"
             height="20.1729"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feBlend
               mode="normal"
               in="SourceGraphic"
@@ -210,9 +210,9 @@ export const commentIconType = {
             width="10.1407"
             height="6.36572"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feBlend
               mode="normal"
               in="SourceGraphic"
@@ -245,9 +245,9 @@ export const commentIconType = {
             width="9.94177"
             height="6.44482"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feBlend
               mode="normal"
               in="SourceGraphic"
@@ -280,9 +280,9 @@ export const commentIconType = {
             width="7.12341"
             height="2.86426"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feBlend
               mode="normal"
               in="SourceGraphic"
@@ -301,9 +301,9 @@ export const commentIconType = {
             width="11.3615"
             height="6.77295"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feBlend
               mode="normal"
               in="SourceGraphic"
@@ -336,9 +336,9 @@ export const commentIconType = {
             width="8.60547"
             height="2.86426"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feBlend
               mode="normal"
               in="SourceGraphic"
@@ -357,9 +357,9 @@ export const commentIconType = {
             width="11.3121"
             height="6.62988"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feBlend
               mode="normal"
               in="SourceGraphic"
@@ -392,9 +392,9 @@ export const commentIconType = {
             width="7.9613"
             height="4.00195"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feBlend
               mode="normal"
               in="SourceGraphic"
@@ -413,9 +413,9 @@ export const commentIconType = {
             width="9.09436"
             height="4.00195"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feBlend
               mode="normal"
               in="SourceGraphic"
@@ -434,9 +434,9 @@ export const commentIconType = {
             width="4.38354"
             height="9.99658"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feBlend
               mode="normal"
               in="SourceGraphic"
@@ -456,8 +456,8 @@ export const commentIconType = {
             y2="30.4357"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FFCA44" />
-            <stop offset="1" stop-color="#F8A528" />
+            <stop stopColor="#FFCA44" />
+            <stop offset="1" stopColor="#F8A528" />
           </linearGradient>
           <radialGradient
             id="paint1_radial_36_252"
@@ -467,8 +467,8 @@ export const commentIconType = {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(22.3564 5.2992) rotate(141.116) scale(5.48586 16.1912)"
           >
-            <stop stop-color="#FFE34C" />
-            <stop offset="1" stop-color="#FFE34C" stop-opacity="0" />
+            <stop stopColor="#FFE34C" />
+            <stop offset="1" stopColor="#FFE34C" stopOpacity="0" />
           </radialGradient>
           <radialGradient
             id="paint2_radial_36_252"
@@ -478,8 +478,8 @@ export const commentIconType = {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(12.3687 17.2539) rotate(125.191) scale(8.12679 5.88718)"
           >
-            <stop stop-color="#FFCA2E" />
-            <stop offset="1" stop-color="#FFCA2E" stop-opacity="0" />
+            <stop stopColor="#FFCA2E" />
+            <stop offset="1" stopColor="#FFCA2E" stopOpacity="0" />
           </radialGradient>
           <radialGradient
             id="paint3_radial_36_252"
@@ -489,8 +489,8 @@ export const commentIconType = {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(21.1859 19.8307) rotate(146.743) scale(17.7086 30.9906)"
           >
-            <stop offset="0.681" stop-color="#E18E3F" stop-opacity="0" />
-            <stop offset="1" stop-color="#E18E3F" />
+            <stop offset="0.681" stopColor="#E18E3F" stopOpacity="0" />
+            <stop offset="1" stopColor="#E18E3F" />
           </radialGradient>
           <linearGradient
             id="paint4_linear_36_252"
@@ -500,8 +500,8 @@ export const commentIconType = {
             y2="33.5376"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#D8796F" stop-opacity="0" />
-            <stop offset="1" stop-color="#D8796F" />
+            <stop stopColor="#D8796F" stopOpacity="0" />
+            <stop offset="1" stopColor="#D8796F" />
           </linearGradient>
           <linearGradient
             id="paint5_linear_36_252"
@@ -511,8 +511,8 @@ export const commentIconType = {
             y2="27.8306"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#D1730B" />
-            <stop offset="1" stop-color="#E27D47" />
+            <stop stopColor="#D1730B" />
+            <stop offset="1" stopColor="#E27D47" />
           </linearGradient>
           <linearGradient
             id="paint6_linear_36_252"
@@ -522,8 +522,8 @@ export const commentIconType = {
             y2="14.9187"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FFDB44" />
-            <stop offset="1" stop-color="#F9A928" />
+            <stop stopColor="#FFDB44" />
+            <stop offset="1" stopColor="#F9A928" />
           </linearGradient>
           <radialGradient
             id="paint7_radial_36_252"
@@ -533,8 +533,8 @@ export const commentIconType = {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(20.1074 17.7405) rotate(-142.633) scale(2.53871 1.69933)"
           >
-            <stop stop-color="#D98320" />
-            <stop offset="1" stop-color="#D98320" stop-opacity="0" />
+            <stop stopColor="#D98320" />
+            <stop offset="1" stopColor="#D98320" stopOpacity="0" />
           </radialGradient>
           <linearGradient
             id="paint8_linear_36_252"
@@ -544,8 +544,8 @@ export const commentIconType = {
             y2="29.3625"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FFDB44" />
-            <stop offset="1" stop-color="#F9A928" />
+            <stop stopColor="#FFDB44" />
+            <stop offset="1" stopColor="#F9A928" />
           </linearGradient>
           <radialGradient
             id="paint9_radial_36_252"
@@ -555,8 +555,8 @@ export const commentIconType = {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(20.3339 32.46) scale(7.99911 3.04305)"
           >
-            <stop stop-color="#F29545" />
-            <stop offset="1" stop-color="#F29545" stop-opacity="0" />
+            <stop stopColor="#F29545" />
+            <stop offset="1" stopColor="#F29545" stopOpacity="0" />
           </radialGradient>
           <radialGradient
             id="paint10_radial_36_252"
@@ -566,8 +566,8 @@ export const commentIconType = {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(19.95 27.3522) scale(8.11223 2.17761)"
           >
-            <stop stop-color="#DA810B" />
-            <stop offset="1" stop-color="#FFB610" stop-opacity="0" />
+            <stop stopColor="#DA810B" />
+            <stop offset="1" stopColor="#FFB610" stopOpacity="0" />
           </radialGradient>
           <linearGradient
             id="paint11_linear_36_252"
@@ -577,8 +577,8 @@ export const commentIconType = {
             y2="31.095"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#DC7C6A" />
-            <stop offset="1" stop-color="#DC7C6A" stop-opacity="0" />
+            <stop stopColor="#DC7C6A" />
+            <stop offset="1" stopColor="#DC7C6A" stopOpacity="0" />
           </linearGradient>
           <radialGradient
             id="paint12_radial_36_252"
@@ -588,8 +588,8 @@ export const commentIconType = {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(17.0876 29.3625) scale(6.12854 9.21233)"
           >
-            <stop stop-color="#E38811" />
-            <stop offset="1" stop-color="#E38811" stop-opacity="0" />
+            <stop stopColor="#E38811" />
+            <stop offset="1" stopColor="#E38811" stopOpacity="0" />
           </radialGradient>
           <linearGradient
             id="paint13_linear_36_252"
@@ -599,8 +599,8 @@ export const commentIconType = {
             y2="28.5503"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FFF166" />
-            <stop offset="1" stop-color="#FFF166" stop-opacity="0" />
+            <stop stopColor="#FFF166" />
+            <stop offset="1" stopColor="#FFF166" stopOpacity="0" />
           </linearGradient>
           <linearGradient
             id="paint14_linear_36_252"
@@ -610,8 +610,8 @@ export const commentIconType = {
             y2="24.8465"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FFDB44" />
-            <stop offset="1" stop-color="#F9A928" />
+            <stop stopColor="#FFDB44" />
+            <stop offset="1" stopColor="#F9A928" />
           </linearGradient>
           <radialGradient
             id="paint15_radial_36_252"
@@ -621,8 +621,8 @@ export const commentIconType = {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(20.6216 28.1081) scale(9.17128 3.20433)"
           >
-            <stop stop-color="#F29545" />
-            <stop offset="1" stop-color="#F29545" stop-opacity="0" />
+            <stop stopColor="#F29545" />
+            <stop offset="1" stopColor="#F29545" stopOpacity="0" />
           </radialGradient>
           <radialGradient
             id="paint16_radial_36_252"
@@ -632,8 +632,8 @@ export const commentIconType = {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(20.1808 22.7301) scale(9.30099 2.29302)"
           >
-            <stop stop-color="#DA810B" />
-            <stop offset="1" stop-color="#FFB610" stop-opacity="0" />
+            <stop stopColor="#DA810B" />
+            <stop offset="1" stopColor="#FFB610" stopOpacity="0" />
           </radialGradient>
           <linearGradient
             id="paint17_linear_36_252"
@@ -643,8 +643,8 @@ export const commentIconType = {
             y2="24.3174"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FFF166" />
-            <stop offset="1" stop-color="#FFF166" stop-opacity="0" />
+            <stop stopColor="#FFF166" />
+            <stop offset="1" stopColor="#FFF166" stopOpacity="0" />
           </linearGradient>
           <linearGradient
             id="paint18_linear_36_252"
@@ -654,8 +654,8 @@ export const commentIconType = {
             y2="19.9073"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FFDB44" />
-            <stop offset="1" stop-color="#F9A928" />
+            <stop stopColor="#FFDB44" />
+            <stop offset="1" stopColor="#F9A928" />
           </linearGradient>
           <radialGradient
             id="paint19_radial_36_252"
@@ -665,8 +665,8 @@ export const commentIconType = {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(20.6587 22.3255) scale(6.01636 2.67801)"
           >
-            <stop stop-color="#F29545" />
-            <stop offset="1" stop-color="#F29545" stop-opacity="0" />
+            <stop stopColor="#F29545" />
+            <stop offset="1" stopColor="#F29545" stopOpacity="0" />
           </radialGradient>
           <radialGradient
             id="paint20_radial_36_252"
@@ -676,8 +676,8 @@ export const commentIconType = {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(13.7123 5.29822) rotate(90) scale(6.95639 2.58281)"
           >
-            <stop stop-color="#F3A52A" />
-            <stop offset="1" stop-color="#F3A52A" stop-opacity="0" />
+            <stop stopColor="#F3A52A" />
+            <stop offset="1" stopColor="#F3A52A" stopOpacity="0" />
           </radialGradient>
           <radialGradient
             id="paint21_radial_36_252"
@@ -687,8 +687,8 @@ export const commentIconType = {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(11.6812 9.87885) rotate(42.9975) scale(3.48433 5.27237)"
           >
-            <stop stop-color="#CDA25E" />
-            <stop offset="1" stop-color="#CDA25E" stop-opacity="0" />
+            <stop stopColor="#CDA25E" />
+            <stop offset="1" stopColor="#CDA25E" stopOpacity="0" />
           </radialGradient>
           <radialGradient
             id="paint22_radial_36_252"
@@ -698,8 +698,8 @@ export const commentIconType = {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(15.2978 4.86834) rotate(-168.366) scale(1.79316 3.91397)"
           >
-            <stop offset="0.55" stop-color="#CCB28B" stop-opacity="0" />
-            <stop offset="1" stop-color="#CCB28B" />
+            <stop offset="0.55" stopColor="#CCB28B" stopOpacity="0" />
+            <stop offset="1" stopColor="#CCB28B" />
           </radialGradient>
           <linearGradient
             id="paint23_linear_36_252"
@@ -709,8 +709,8 @@ export const commentIconType = {
             y2="13.3592"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FFF166" />
-            <stop offset="1" stop-color="#FFF166" stop-opacity="0" />
+            <stop stopColor="#FFF166" />
+            <stop offset="1" stopColor="#FFF166" stopOpacity="0" />
           </linearGradient>
           <linearGradient
             id="paint24_linear_36_252"
@@ -720,8 +720,8 @@ export const commentIconType = {
             y2="18.2547"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FFF166" />
-            <stop offset="1" stop-color="#FFF166" stop-opacity="0" />
+            <stop stopColor="#FFF166" />
+            <stop offset="1" stopColor="#FFF166" stopOpacity="0" />
           </linearGradient>
           <linearGradient
             id="paint25_linear_36_252"
@@ -731,8 +731,8 @@ export const commentIconType = {
             y2="5.8024"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FFF166" />
-            <stop offset="1" stop-color="#FFF166" stop-opacity="0" />
+            <stop stopColor="#FFF166" />
+            <stop offset="1" stopColor="#FFF166" stopOpacity="0" />
           </linearGradient>
         </defs>
       </svg>
