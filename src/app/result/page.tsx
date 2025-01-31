@@ -8,6 +8,12 @@ import { ShareIcon } from '@/components/Icons/ShareIcon';
 import useCopyToClipboard from '@/hooks/useCopyToClipboard';
 import { useToast } from '@/hooks/use-toast';
 import * as Toast from '@radix-ui/react-toast';
+import { useSaveImage } from '@/hooks/useSaveImage';
+
+import { Background } from '@/components/result/Background';
+import { Face } from '@/components/result/Face';
+import { Comment } from '@/components/result/Comment';
+import { Goods } from '@/components/result/Goods';
 
 export default function ResultPage() {
   const router = useRouter();
@@ -27,6 +33,8 @@ export default function ResultPage() {
     });
   };
 
+  const { imageRef, saveImage } = useSaveImage();
+
   return (
     <Flex
       flexCol={true}
@@ -35,9 +43,17 @@ export default function ResultPage() {
       className="justify-center h-full"
     >
       <TitleText text="개발자 프사 생성기" />
-      <div className="w-60 h-60 mt-8 bg-neutral-300" />
-      <div className="w-60 mt-8 flex justify-around">
-        <Button type="dark">이미지 저장하기</Button>
+      <div className="h-8" />
+      <div ref={imageRef} className="w-60 h-60 relative">
+        <Background />
+        <Face />
+        <Comment />
+        <Goods />
+      </div>
+      <div className="w-60 mt-8 flex justify-around z-50">
+        <Button type="dark" handleClick={saveImage}>
+          이미지 저장하기
+        </Button>
         <Toast.Provider duration={3000}>
           <Button className="items-center" handleClick={handleCopyLink}>
             <ShareIcon className="mr-1" />
