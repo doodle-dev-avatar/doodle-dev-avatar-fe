@@ -15,6 +15,8 @@ import { Face } from '@/components/result/Face';
 import { Comment } from '@/components/result/Comment';
 import { Goods } from '@/components/result/Goods';
 
+const SITE_URL = 'https://doodle-dev.netlify.app';
+
 export default function ResultPage() {
   const router = useRouter();
   const handleClickRetry = () => {
@@ -25,7 +27,7 @@ export default function ResultPage() {
 
   const { copyToClipboard } = useCopyToClipboard();
   const handleCopyLink = () => {
-    const linkToCopy = window.location.href;
+    const linkToCopy = SITE_URL;
     copyToClipboard(linkToCopy);
     toast({
       description: '링크가 복사되었습니다.',
