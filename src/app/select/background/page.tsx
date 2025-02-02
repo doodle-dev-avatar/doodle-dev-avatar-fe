@@ -3,12 +3,12 @@ import SlotMachine from '@/components/widgets/SlotMachine';
 
 export default function SelectBackgroundPage() {
   const items = [
-    <BackgroundImage key="white" type="white" />,
-    <BackgroundImage key="grid" type="grid" />,
-    <BackgroundImage key="dot" type="dot" />,
-    <BackgroundImage key="diagonal" type="diagonal" />,
-    <BackgroundImage key="radial" type="radial" />,
-    <BackgroundImage key="linear" type="linear" />,
+    { key: 'white', component: <BackgroundImage type="white" /> },
+    { key: 'grid', component: <BackgroundImage type="grid" /> },
+    { key: 'dot', component: <BackgroundImage type="dot" /> },
+    { key: 'diagonal', component: <BackgroundImage type="diagonal" /> },
+    { key: 'radial', component: <BackgroundImage type="radial" /> },
+    { key: 'linear', component: <BackgroundImage type="linear" /> },
   ];
 
   return (
