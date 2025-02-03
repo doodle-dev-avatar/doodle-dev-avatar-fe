@@ -3,12 +3,12 @@ import SlotMachine from '@/components/widgets/SlotMachine';
 
 export default function SelectCommentPage() {
   const items = [
-    <CommentImage key="none" type="none" />,
-    <CommentImage key="lgtm" type="lgtm" />,
-    <CommentImage key="merge" type="merge" />,
-    <CommentImage key="pr" type="pr" />,
-    <CommentImage key="review" type="review" />,
-    <CommentImage key="why" type="why" />,
+    { key: 'none', component: <CommentImage type="none" /> },
+    { key: 'lgtm', component: <CommentImage type="lgtm" /> },
+    { key: 'merge', component: <CommentImage type="merge" /> },
+    { key: 'pr', component: <CommentImage type="pr" /> },
+    { key: 'review', component: <CommentImage type="review" /> },
+    { key: 'why', component: <CommentImage type="why" /> },
   ];
 
   return (

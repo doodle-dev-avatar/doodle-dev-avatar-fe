@@ -3,12 +3,12 @@ import SlotMachine from '@/components/widgets/SlotMachine';
 
 export default function SelectPropsPage() {
   const items = [
-    <PropsImage key="none" type="none" />,
-    <PropsImage key="headphone" type="headphone" />,
-    <PropsImage key="airpods" type="airpods" />,
-    <PropsImage key="glasses" type="glasses" />,
-    <PropsImage key="sweat" type="sweat" />,
-    <PropsImage key="hoodie" type="hoodie" />,
+    { key: 'none', component: <PropsImage type="none" /> },
+    { key: 'headphone', component: <PropsImage type="headphone" /> },
+    { key: 'airpods', component: <PropsImage type="airpods" /> },
+    { key: 'glasses', component: <PropsImage type="glasses" /> },
+    { key: 'sweat', component: <PropsImage type="sweat" /> },
+    { key: 'hoodie', component: <PropsImage type="hoodie" /> },
   ];
 
   return (
