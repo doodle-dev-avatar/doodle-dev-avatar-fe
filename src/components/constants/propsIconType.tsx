@@ -1,6 +1,7 @@
 import { PropsType } from '@/types/selectType';
 
 export const propsIconType = {
+  none: <div></div>,
   headphone: (
     <svg
       width="184"

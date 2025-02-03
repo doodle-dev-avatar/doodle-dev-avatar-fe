@@ -3,10 +3,10 @@ import SlotMachine from '@/components/widgets/SlotMachine';
 
 export default function SelectFacePage() {
   const items = [
-    <FaceImage key="circle" type="circle" />,
-    <FaceImage key="cookie" type="cookie" />,
-    <FaceImage key="clover" type="clover" />,
-    <FaceImage key="eight" type="eight" />,
+    { key: 'circle', component: <FaceImage type="circle" /> },
+    { key: 'cookie', component: <FaceImage type="cookie" /> },
+    { key: 'clover', component: <FaceImage type="clover" /> },
+    { key: 'eight', component: <FaceImage type="eight" /> },
   ];
 
   return (

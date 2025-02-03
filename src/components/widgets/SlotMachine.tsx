@@ -7,7 +7,7 @@ import Button from '../common/Button';
 import { useSelectStore } from '@/store/useSelectStore';
 
 interface SlotMachineProps {
-  items: JSX.Element[];
+  items: { key: string; component: JSX.Element }[];
   selectType:
     | 'background'
     | 'expression'
@@ -21,7 +21,6 @@ const SlotMachine: React.FC<SlotMachineProps> = ({ items, selectType }) => {
   const { setSelectByType } = useSelectStore();
   const [isSpinning, setIsSpinning] = useState(true);
   const [isNext, setIsNext] = useState(false);
-  const [result, setResult] = useState<JSX.Element | null>(null);
   const [activeIndex, setActiveIndex] = useState(0);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
   const router = useRouter();
@@ -48,8 +47,7 @@ const SlotMachine: React.FC<SlotMachineProps> = ({ items, selectType }) => {
   const handleStop = () => {
     setIsSpinning(false);
     const selectedItem = items[activeIndex];
-    setResult(selectedItem);
-    setSelectByType(selectType, items[activeIndex].key || '');
+    setSelectByType(selectType, selectedItem.key || '');
     setIsNext(true);
   };
 
@@ -98,7 +96,7 @@ const SlotMachine: React.FC<SlotMachineProps> = ({ items, selectType }) => {
                     : 'border-gray-700'
                 }`}
               >
-                {item}
+                {item.component}
               </Flex>
             ))}
           </Flex>

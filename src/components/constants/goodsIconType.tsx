@@ -1,6 +1,7 @@
 import { GoodsType } from '@/types/selectType';
 
 export const goodsIconType = {
+  none: <div></div>,
   monster: (
     <svg
       width="71"

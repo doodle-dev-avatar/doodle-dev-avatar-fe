@@ -3,12 +3,12 @@ import SlotMachine from '@/components/widgets/SlotMachine';
 
 export default function SelectGoodsPage() {
   const items = [
-    <GoodsImage key="none" type="none" />,
-    <GoodsImage key="monster" type="monster" />,
-    <GoodsImage key="plant" type="plant" />,
-    <GoodsImage key="coffee" type="coffee" />,
-    <GoodsImage key="books" type="books" />,
-    <GoodsImage key="phone" type="phone" />,
+    { key: 'none', component: <GoodsImage type="none" /> },
+    { key: 'monster', component: <GoodsImage type="monster" /> },
+    { key: 'plant', component: <GoodsImage type="plant" /> },
+    { key: 'coffee', component: <GoodsImage type="coffee" /> },
+    { key: 'books', component: <GoodsImage type="books" /> },
+    { key: 'phone', component: <GoodsImage type="phone" /> },
   ];
 
   return (
