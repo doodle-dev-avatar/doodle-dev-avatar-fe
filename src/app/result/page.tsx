@@ -46,11 +46,13 @@ export default function ResultPage() {
     >
       <TitleText text="개발자 프사 생성기" />
       <div className="h-8" />
-      <div ref={imageRef} className="w-60 h-60 relative">
-        <Background />
-        <Face />
-        <Comment />
-        <Goods />
+      <div className="w-[244px] h-[244px] border-2 border-black">
+        <div ref={imageRef} className="relative w-full h-full">
+          <Background />
+          <Face />
+          <Comment />
+          <Goods />
+        </div>
       </div>
       <div className="w-60 mt-8 flex justify-around z-50">
         <Button type="dark" handleClick={saveImage}>
