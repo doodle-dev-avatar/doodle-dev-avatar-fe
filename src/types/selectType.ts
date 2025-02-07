@@ -13,7 +13,7 @@ export type PropsType = [
   'airpods',
   'glasses',
   'sweat',
-  'hoodie',
+  'pencil',
 ];
 export type GoodsType = [
   'none',
