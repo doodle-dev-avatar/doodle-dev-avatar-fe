@@ -15,6 +15,8 @@ import { Face } from '@/components/result/Face';
 import { Comment } from '@/components/result/Comment';
 import { Goods } from '@/components/result/Goods';
 
+import { useSelectStore } from '@/store/useSelectStore';
+
 const SITE_URL = 'https://doodle-dev.netlify.app';
 
 export default function ResultPage() {
@@ -37,6 +39,8 @@ export default function ResultPage() {
 
   const { imageRef, saveImage } = useSaveImage();
 
+  const isHydrated = useSelectStore((state) => state.isHydrated);
+
   return (
     <Flex
       flexCol={true}
@@ -47,12 +51,16 @@ export default function ResultPage() {
       <TitleText text="개발자 프사 생성기" />
       <div className="h-8" />
       <div className="w-[244px] h-[244px] border-2 border-black">
-        <div ref={imageRef} className="relative w-full h-full">
-          <Background />
-          <Face />
-          <Comment />
-          <Goods />
-        </div>
+        {isHydrated ? (
+          <div ref={imageRef} className="relative w-full h-full">
+            <Background />
+            <Face />
+            <Comment />
+            <Goods />
+          </div>
+        ) : (
+          <div className="w-full h-full bg-gray-100" />
+        )}
       </div>
       <div className="w-60 mt-8 flex justify-around z-50">
         <Button type="dark" handleClick={saveImage}>
