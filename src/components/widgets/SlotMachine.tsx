@@ -90,10 +90,10 @@ const SlotMachine: React.FC<SlotMachineProps> = ({ items, selectType }) => {
                 align="center"
                 justify="center"
                 key={index}
-                className={`w-20 h-20 flex text-3xl font-bold border-4 rounded ${
+                className={`w-20 h-20 flex text-base font-bold border-2 ${
                   index + rowIndex * Math.ceil(items.length / 2) === activeIndex
-                    ? 'border-red-500'
-                    : 'border-gray-700'
+                    ? 'border-gray-950'
+                    : 'border-gray-300'
                 }`}
               >
                 {item.component}
