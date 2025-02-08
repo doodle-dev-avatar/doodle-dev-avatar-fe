@@ -6,11 +6,10 @@ import Flex from '../Flex';
 import { useSelectStore } from '@/store/useSelectStore';
 
 export const Face = () => {
-  const face = useSelectStore((state) => state.face) || 'circle';
-  const expression = useSelectStore((state) => state.expression) || 'smile';
-  const props = useSelectStore((state) => state.props) || 'glasses';
+  const face = useSelectStore((state) => state.face);
+  const expression = useSelectStore((state) => state.expression);
+  const props = useSelectStore((state) => state.props);
 
-  console.log(face, expression, props);
   return (
     <Flex
       align="center"
@@ -27,7 +26,7 @@ export const Face = () => {
           'w-32 top-15': props === 'airpods',
           'w-11/12 top-12': props === 'glasses',
           'top-10 -right-1': props === 'sweat',
-          'w-32': props === 'hoodie',
+          'w-10 top-12 -right-4': props === 'pencil',
         })}
       >
         <PropsImage type={props} />

@@ -26,6 +26,7 @@ export interface SelectStore {
     type: 'background' | 'expression' | 'face' | 'comment' | 'goods' | 'props',
     value: string,
   ) => void;
+  isHydrated: boolean;
 }
 
 export const useSelectStore = create(
@@ -57,9 +58,15 @@ export const useSelectStore = create(
           ...state,
           [type]: value,
         })),
+      isHydrated: false,
     }),
     {
       name: 'selectStorage',
+      onRehydrateStorage: () => (state) => {
+        if (state) {
+          state.isHydrated = true;
+        }
+      },
     },
   ),
 );

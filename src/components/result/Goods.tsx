@@ -4,7 +4,7 @@ import GoodsImage from '../common/Image/GoodsImage';
 import Flex from '../Flex';
 
 export const Goods = () => {
-  const goods = useSelectStore((state) => state.goods) || 'monster';
+  const goods = useSelectStore((state) => state.goods);
   return (
     <Flex
       className={clsx('absolute', {

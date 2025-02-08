@@ -8,7 +8,7 @@ export default function SelectPropsPage() {
     { key: 'airpods', component: <PropsImage type="airpods" /> },
     { key: 'glasses', component: <PropsImage type="glasses" /> },
     { key: 'sweat', component: <PropsImage type="sweat" /> },
-    { key: 'hoodie', component: <PropsImage type="hoodie" /> },
+    { key: 'pencil', component: <PropsImage type="pencil" /> },
   ];
 
   return (
