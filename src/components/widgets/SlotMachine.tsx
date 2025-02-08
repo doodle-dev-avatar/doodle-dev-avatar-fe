@@ -42,7 +42,7 @@ const SlotMachine: React.FC<SlotMachineProps> = ({ items, selectType }) => {
         intervalRef.current = null;
       }
     };
-  }, [isSpinning]);
+  }, [isSpinning, items.length]);
 
   const handleStop = () => {
     setIsSpinning(false);
