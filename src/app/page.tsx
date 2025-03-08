@@ -14,7 +14,7 @@ export default function Home() {
       justify="center"
       className="justify-center h-full"
     >
-      <TitleText text="개발자 프사 생성기" />
+      <TitleText text="개발자 프로필 생성기" />
       <div className="w-48 h-48 mt-8" >{IconSVG}</div>
       <Link href="/select/face">
         <Button className="pt-6 text-lg">시작하기</Button>
