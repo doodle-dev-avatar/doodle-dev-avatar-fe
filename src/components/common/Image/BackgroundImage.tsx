@@ -8,7 +8,7 @@ type props = {
 const BackgroundImage = ({ type }: props) => {
   const IconSVG = backgroundIconType[type];
   if (!IconSVG) return null;
-  return <>{IconSVG}</>;
+  return <IconSVG width="240" height="240" />;
 };
 
 export default BackgroundImage;
