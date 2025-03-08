@@ -5,7 +5,7 @@ export const Comment = () => {
   const comment = useSelectStore((state) => state.comment);
 
   return (
-    <div className="absolute text-center w-20 h-12 top-1.5 right-0.5 pt-1">
+    <div className="absolute text-center w-20 h-12 top-[4px] right-0.5 pt-1">
       <p
         className={clsx('text-base font-semibold', {
           'text-base':
