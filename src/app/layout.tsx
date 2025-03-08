@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description: '나만의 개발자 프로필을 만들어 보세요!',
     siteName: '개발자 프로필 생성기',
     images: [{
-      url: './thumbnail.png',
+      url: 'https://doodle-dev.netlify.app/thumbnail.png',
       width: 1200,
       height: 630,
     }],
