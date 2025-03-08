@@ -4944,6 +4944,8 @@ snapshots:
 
   hosted-git-info@2.8.9: {}
 
+  html-to-image@1.11.11: {}
+
   html2canvas@1.4.1:
     dependencies:
       css-line-break: 2.1.0
@@ -5192,6 +5194,10 @@ snapshots:
   mdn-data@2.0.28: {}
 
   mdn-data@2.0.30: {}
+
+  lucide-react@0.473.0(react@18.3.1):
+    dependencies:
+      react: 18.3.1
 
   merge2@1.4.1: {}
 
